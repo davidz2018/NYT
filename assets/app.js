@@ -1,5 +1,5 @@
 // api key: eb34671b691c4ff98e986ec16ee16beb 
-$(window).on("click", function(){
+$("#findOne").on("click", function(){
 
     var q = $("#searchTerm").val().trim();
     var begin = $("#startYear").val().trim();
@@ -7,9 +7,9 @@ $(window).on("click", function(){
 
     var input = {
         'api-key': "eb34671b691c4ff98e986ec16ee16beb",
-    'q': q,
-    'begin_date': begin,
-    'end_date': end
+        'q': q,
+        'begin_date': begin + '0101',
+        'end_date': end + '1231'
     };
 
 
@@ -21,7 +21,7 @@ $(window).on("click", function(){
         url: url,
         method: 'GET',
     }).done(function(result) {
-
+        $(".form2").append(result.response.docs[0].headline.main)
         console.log(result.response.docs[0]);
         }).fail(function(err) {
         throw err;
