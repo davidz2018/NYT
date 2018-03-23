@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>NYT Project</title>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/flatly/bootstrap.min.css">
+
+</head>
+<body>
+
+<!-- Main  Search -->
+<div class="container">
+
+<!-- Jumbotron for Title -->
+<div class="jumbotron" style="background-color:blue ; color: white;">
+   <h1 class="text-center"><strong>New York Times Search</strong></h1>
+</div>
+
+<!-- Row for Searching New York Times -->
+<div class="row">
+   <div class="col-sm-12">
+   <br>
+       <!-- search parameters -->
+       <div class="panel panel-primary">
+           <div class="panel-heading">
+               <h3 class="panel-title"><strong><i class="fa  fa-list-alt"></i>Search Parameters</strong></h3>
+           </div>
+           <div class="panel-body">
+
+               <!-- HTML Form -->
+               <form role="form">
+
+                   <!-- text box for search term-->
+                 <div class="form-group">
+                   <label for="search">Search Term:</label>
+                   <input type="text" class="form-control" id="searchTerm">
+                 </div>
+
+                 <div class="form-group">
+                    <label for="search">Number of Records to Recieve</label>
+                    <input type="text" class="form-control" id="numrecord">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="search">Start Year</label>
+                    <input type="text" class="form-control" id="startYear">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="search">End Year (optional)</label>
+                    <input type="text" class="form-control" id="endYear">
+                  </div>
+                  <button type="button" class="btn btn-secondary" id="findOne">Search</button>
+                  <button type="button" class="btn btn-secondary" id="clearOne">Clear Results</button>
+                  </form>
+
+                  <form class="form2">
+                    <!-- Row for results New York Times -->
+                  <div class="row">
+                  <div class="col-sm-12">
+                  <br>
+                      <!-- search parameters -->
+                      <div class="panel panel-primary">
+                          <div class="panel-heading">
+                              <h5 class="panel-title"><strong>Top Articles</strong></h5>
+                          </div>
+           
+                      </form>
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                  <script src="assets/app.js"></script>
+</body>
+</html>
